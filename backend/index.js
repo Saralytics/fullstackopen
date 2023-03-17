@@ -26,6 +26,10 @@ let notes = [
   ]
 
 // get all resources
+
+app.get('/',(request,response) =>
+    response.json(notes))
+
 app.get('/api/notes',(request,response) =>
     response.json(notes))
 
